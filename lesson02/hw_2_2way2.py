@@ -8,7 +8,7 @@ for i in c:
     i += 1
     if i < 1: # Отсекаем числа меньше ноля.
         continue
-    elif i > bmax: # Если привышает bmax то цикл обрывается
+    elif i > bmax: # Если превышает bmax то цикл обрывается
         break
     else:
         print(i)
