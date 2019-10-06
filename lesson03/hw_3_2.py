@@ -7,12 +7,12 @@ def nok(a,b):
             b %= a
     nod = a + b
     nok = m//nod
-    return nok  #можно было бы прописать  print(nok) и в 16 строчке написать nok(a,b) работало б также
+    return nok  # можно было бы прописать  print(nok) и в 16 строчке написать nok(a,b) работало б также
 
 while True:
     try:
-        a = int(input("Введите первое число"))
-        b = int(input("Введите второе число"))
+        a = abs(int(input("Введите первое число"))) # Берем мдуль что бы мы могли считать НОК с отрицательных чисел.
+        b = abs(int(input("Введите второе число")))
         print(nok(a,b))
     except ValueError:
         print('Вводить нужно цифры')
